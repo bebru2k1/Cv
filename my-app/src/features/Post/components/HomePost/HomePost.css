@@ -1,0 +1,52 @@
+.homepost {
+  margin-top: 70px;
+}
+.homepost__title {
+  font-size: 30px;
+  text-align: left;
+  color: var(--green-color);
+  font-weight: bold;
+}
+.homepost__post {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepost_addlink {
+  margin: 20px 0 20px 0;
+  text-align: right;
+  font-size: 20px;
+}
+.homepost_addlink :hover {
+  color: var(--green-color);
+}
+.homepost_addlink a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 739px) {
+  .homepost__title {
+    font-size: 2.5rem;
+  }
+  .homepost__post {
+  }
+
+  .singlepost__title {
+    margin: 0;
+  }
+  .singlepost__star {
+    margin-left: 140px;
+  }
+  .singlepost__title {
+    font-size: 1.6rem;
+  }
+
+  .homepost_addlink {
+    font-size: 1.6rem;
+  }
+}

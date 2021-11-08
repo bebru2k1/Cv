@@ -1,0 +1,252 @@
+.account {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  margin-top: 50px;
+}
+.account__header {
+  text-align: center;
+}
+.account__background {
+  position: relative;
+}
+.account__background__upload {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+
+  position: relative;
+}
+.account__background__upload img {
+  opacity: 0.3;
+}
+
+.account__background img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.account__background__select {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+.account__background__select__icon {
+  width: 30px;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  padding: 5px;
+  border-radius: 3px;
+  height: 30px;
+}
+.account__background__toggle {
+  text-align: left;
+  background-color: black;
+  border-radius: 5px;
+  list-style: none;
+}
+.account__background__toggle__item {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.account__background__toggle__item:hover {
+  opacity: 0.7;
+}
+
+.account__avatar {
+  transform: translateY(-50%);
+}
+
+.account__avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--green-color);
+}
+.account__displayname {
+  font-size: 20px;
+  color: var(--green-color);
+  font-weight: bold;
+}
+.account__container {
+}
+.account__signout {
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  color: var(--green-color);
+}
+
+/* UploadBackground Component */
+.uploadbgr__icon {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 30%;
+}
+.uploadbgr__upload {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.uploadbgr {
+  animation: 0.3s ease-in fadedown;
+}
+
+@keyframes fadedown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}
+.uploadinput {
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+.uploadinput__item {
+  margin-right: 10px;
+}
+
+.uploadinput__link {
+  display: flex;
+  font-weight: bold;
+}
+.uploadinput__link__group1 {
+  display: flex;
+  align-items: center;
+  background-color: var(--yellow-color);
+  color: black;
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.uploadinput__link input {
+  border: 0;
+  padding: 10px;
+}
+.uploadinput__link__group1__link {
+  margin-right: 5px;
+}
+.uploadinput__view {
+  display: flex;
+  align-items: center;
+  background-color: var(--orage-color);
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+
+  display: inline-flex;
+  font-weight: bold;
+  cursor: pointer;
+}
+.uploadinput__change {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-flex;
+  /* font-weight: bold; */
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.account__edit {
+  padding: 20px 0;
+}
+
+.account__edit__change {
+  font-size: 18px;
+  cursor: pointer;
+}
+.account__edit__change__icon.active {
+  transform: rotate(90deg);
+  animation: 0.3s ease-out rightToDown;
+}
+.account__edit__toggle {
+  margin-left: 10px;
+  list-style: none;
+}
+.account__edit__toggle__item {
+  padding: 10px;
+}
+.account__edit__toggle__avatar {
+  cursor: pointer;
+}
+.account__edit__toggle__avatar__toggle {
+  margin-left: 10px;
+}
+
+.account__edit__toggle__content {
+  cursor: pointer;
+}
+
+.account__edit__toggle__content__toggle {
+}
+
+.account__edit__change {
+}
+.account__edit__toggle__avatar {
+}
+.account__edit__toggle__avatar__icon {
+}
+.account__edit__toggle__avatar__icon.active {
+  transform: rotate(90deg);
+  animation: 0.3s ease-out rightToDown;
+}
+.account__edit__toggle__content {
+}
+.account__edit__toggle__content__toggle {
+}
+.account__edit__toggle__content__icon {
+}
+.account__edit__toggle__content__icon.active {
+  transform: rotate(90deg);
+  animation: 0.3s ease-out rightToDown;
+}
+.account__edit {
+}
+
+.account__edit__change__icon {
+}
+
+@keyframes rightToDown {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .account {
+    margin-top: 0;
+  }
+  .uploadbgr__icon {
+    top: 40%;
+    left: 13%;
+  }
+  .uploadinput {
+    display: block;
+  }
+  .uploadinput__view {
+    display: inline-block;
+  }
+}

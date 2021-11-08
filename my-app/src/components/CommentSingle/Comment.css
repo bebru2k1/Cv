@@ -1,0 +1,31 @@
+.commentsingle {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(31, 29, 29);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.commentsingle:first-child {
+  margin-top: 0;
+}
+.commentsingle__author {
+}
+.commentsingle__container {
+  margin-left: 30px;
+}
+.commentsingle__author__image img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.commentsingle__author__displayname {
+}
+.commentsingle__author__displayname a {
+  color: var(--green-color);
+  text-decoration: initial;
+}
+.commentsingle__content {
+}

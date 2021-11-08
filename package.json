@@ -1,0 +1,9 @@
+{
+  "name": "AuroCoderBlog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bebru2k1/AuroBlogCoder.git",
+  "author": "bebru2k1 <66669380+bebru2k1@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {}
+}

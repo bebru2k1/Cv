@@ -1,0 +1,36 @@
+.postadmin {
+  position: absolute;
+  width: calc(100% - 240px - 14px - 14px);
+  right: 0;
+  /* background-color: white; */
+  height: 100%;
+}
+.postadmin__header {
+  display: flex;
+  margin-top: 30px;
+}
+.postadmin__header__item {
+  list-style: none;
+}
+.postadmin__header__item a {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.postadmin__header__item a:hover {
+  color: var(--green-color);
+  border-radius: 10px;
+  box-shadow: 0 1px 0 4px rgb(20 184 166 / 10%),
+    inset 0 -4em 0 rgb(20 184 166 / 10%);
+}
+
+.postadmin__header__item__title {
+}
+
+.postadmin__header__item__icon {
+  width: 20px;
+  margin-left: 5px;
+}

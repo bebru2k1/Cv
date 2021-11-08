@@ -1,0 +1,116 @@
+.authfrom {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(59, 59, 59);
+  position: relative;
+  top: 50%;
+  transform: translateY(25%);
+}
+.login {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  color: rgb(116, 116, 116);
+}
+.login__usericon {
+  width: 100px;
+  height: 100px;
+  color: rgb(204, 204, 204);
+  border-radius: 50%;
+}
+.login__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.login__input {
+}
+.login__input span {
+  margin-top: 5px;
+  display: block;
+  font-size: 14px;
+  color: rgb(255, 23, 23);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.login__input__username {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.login__input__password {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.login__input input {
+  color: black;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+.login__input input:focus {
+  border: 2px solid rgb(0, 204, 136, 0.5);
+}
+.login__action {
+  color: white;
+  background-color: rgb(0, 204, 136, 0.8);
+  border: 1px solid rgb(0, 204, 136, 0.8);
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.login__action:hover {
+  background-color: rgb(0, 204, 136, 0.6);
+  border: 1px solid rgb(0, 204, 136, 0.6);
+}
+.login__withapp {
+  margin-bottom: 10px;
+}
+.login__withapp__facebook:hover {
+  background-color: rgb(0, 204, 136, 0.6);
+  border: 1px solid rgb(0, 204, 136, 0.6);
+}
+.login__withapp__facebook {
+  display: inline-flex;
+  flex-direction: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 204, 136, 0.8);
+  background-color: rgb(0, 204, 136, 0.8);
+}
+
+.signup {
+}
+.login__image {
+  width: 70%;
+}
+.login__image img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  object-fit: cover;
+}
+.login__spinner {
+  width: 20px;
+}
+
+@media screen and (max-width: 739px) {
+  .authfrom {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 25px;
+    transform: translateY(0);
+  }
+}

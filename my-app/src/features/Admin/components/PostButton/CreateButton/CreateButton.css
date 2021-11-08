@@ -1,0 +1,8 @@
+.createbutton {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  border: 1px solid var(--blue-color);
+  background-color: var(--blue-color);
+}

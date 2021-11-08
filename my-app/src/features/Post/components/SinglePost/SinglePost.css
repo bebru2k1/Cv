@@ -1,0 +1,109 @@
+.singlepost {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  flex-direction: column;
+}
+.singlepost:hover .singlepost__imagepost {
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+}
+
+.singlepost:hover .singlepost__author__image {
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+  transform: translateY(-40%);
+}
+.singlepost:hover .singlepost__star {
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+  transform: translateY(-40%);
+}
+
+.singlepost .singlepost__imagepost {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+.singlepost__author {
+}
+.singlepost__author__image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--green-color);
+  position: absolute;
+  transform: translateY(-50%);
+  left: calc(20px + 10%);
+}
+
+.singlepost__star {
+  background-color: var(--black-color);
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  margin-left: 300px;
+}
+
+.singlepost__star,
+.singlepost__time {
+  display: flex;
+}
+.singlepost__like {
+  color: var(--blue-color);
+  margin-right: 10px;
+}
+.singlepost__like-icon {
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  color: black;
+  padding: 3px;
+}
+.singlepost__like__number {
+  margin-right: 5px;
+}
+
+.singlepost__comment {
+}
+.singlepost__comment__number {
+  margin-right: 5px;
+  color: var(--orage-color);
+}
+.singlepost__comment-icon {
+  border-radius: 50%;
+  background-color: var(--orage-color);
+  color: black;
+  padding: 3px;
+}
+.singlepost__title {
+  font-size: 20px;
+  bottom: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.singlepost:hover .singlepost__title {
+  color: var(--green-color);
+}
+@media only screen and (max-width: 739px) {
+  .singlepost .singlepost__imagepost {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .singlepost__star {
+    margin-left: 170px;
+  }
+}

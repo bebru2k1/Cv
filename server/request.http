@@ -1,0 +1,111 @@
+PUT http://localhost:5000/v1/api/auth/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2MzAzMzI2MzJ9.nj2f0va-IO5XW13ByJRqCf6v4xQkMNZeg7Np5SjJ7z0
+
+{"content" : "## Xin Chào
+
+> Cảm ơn các bạn đã ghé thăm website của mình
+
+> Hãy chỉnh sửa content của mình bằng *[Markdown Guide](https://www.markdownguide.org)* nhé
+"}
+###
+POST http://localhost:5000/v1/api/auth/sigin
+Content-Type: application/json
+
+{
+    "username" : "ducanh1",
+    "password" : "asdfasfasd"
+}
+
+###
+GET http://localhost:5000/v1/api/auth/siginToken
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGM5YTNkMzAxOTMzZjFlOWM2YjJiOGQiLCJpYXQiOjE2MjY2NTYyMDd9.1JzSLcNv3vZCFtNT-jvF-93kLNav6fZTGFejOp-Hf0I
+
+
+
+###
+POST http://localhost:5000/v1/api/auth/register
+Content-Type: application/json
+
+{
+    "username" : "ducanh2",
+    "password" : "ducanh2",
+    "displayName" : "Đức Anh"
+}
+
+###
+GET http://localhost:5000/v1/api/auth/registeradmin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJiYThjMWQ1ODUzYTFlMThmYzE1ZWMiLCJpYXQiOjE2MjI5NDE1Mzd9.KX7OX4YhvQx24niMCJ8KhU1rbMgSMGSnMOIJE-NoOQw
+
+###
+POST http://localhost:5000/v1/api/auth/facebook
+Authorization: Bearer EAAHhudhVIfMBADrHZApO8RxGrTccQreyeMVFR5iqCmjADPwhSsmfxfIOSFtHzQ6l82JiUbZBzDWDKg0XwoXU2kkSiN3r9SecrcD6CssyxwnNpFEuyK37SXrYaKldcvEMJVnZB774AYgGxkaKtBZBRegmfDusSvcOqrUh3fHW9rl0dSxIPJBleOd9OiuJZAq54Spqw8ylO8GaNTmb42qOKU0moMaf2NH6vVGCFDRmvtwKxosMZC4T3b
+
+###
+POST http://localhost:5000/v1/api/auth/facebook
+Authorization: Bearer EAAHhudhVIfMBAI4blhiQxZCDrucBea1zYmAKH1lCZAwx5GHJxv97PZAqZCAjT9HWZCPpY5DCSAfVaZCEAZBogELGMdJohhY0jjynnbJMZAKB9ADlcmVAowWOLXGOQYc69PBElfeFh8CYqBZCSR4i4eRZCP6CQCgjK7OFdkksJf76XZBQr79BmSG5qE5
+
+
+###
+
+GET http://localhost:5000/v1/api/posts?_limit=4&_page=2
+
+###
+POST  http://localhost:5000/v1/api/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2Mjc3MTg0NTl9.1WPmIiWLIkydWHI_qGAAtBR2nfHnniSMcHDNDPihOIo
+
+
+{
+  "title" : "Mỗi người nên có một Tech Stack cho riêng mình",
+  "des" : "GraphQL (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.If you’d like to learn more about Vue before diving in, we created a video walking through the core principles and a sample project.If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the Comparison with Other Frameworks.",
+"image" : "https://www.goccuachung.com/content/images/size/w960/2021/04/techstack-tb.png"
+}
+
+###
+GET http://localhost:5000/v1/api/posts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGM5YTNkMzAxOTMzZjFlOWM2YjJiOGQiLCJpYXQiOjE2MjM4Mjc0NzB9.slDruQOz4qP0qSRz-JeNtIRLOGCyLx1AtCqzKhavsGQ
+###
+DELETE http://localhost:5000/v1/api/posts/60c9ae2648ab741dbc1cf516
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzMDg5MzlkZWY0ZDA1Njg4NDQ4ODEiLCJpYXQiOjE2MjM4Mjg5NDJ9.bWjEyji4bFi4KjdoKLJMNSvcGZ3smk1IvnlEKI57rmM
+
+###
+PUT http://localhost:5000/v1/api/posts/60c9ade6f110a12bb0ff112e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzMDg5MzlkZWY0ZDA1Njg4NDQ4ODEiLCJpYXQiOjE2MjM4Mjg5NDJ9.bWjEyji4bFi4KjdoKLJMNSvcGZ3smk1IvnlEKI57rmM
+
+
+{
+  "title" : "How To Learn VueX New Ahihi",
+  "des" : "GraphQL (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.If you’d like to learn more about Vue before diving in, we created a video walking through the core principles and a sample project.If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the Comparison with Other Frameworks.",
+"image" : "https://i.ytimg.com/vi/4deVCNJq3qc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD-o1wtykfX2XYCbpOcqJNOsaG12Q"
+}
+
+###
+
+
+DELETE http://localhost:5000/v1/api/posts/6119269be9978414d8e28f23
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2Mjg5NTU2MDV9.P3El8wlE_lRTb6qiQOLqzTpj6n9e9drErKiGCYTRqIA
+
+###
+
+POST http://localhost:5000/v1/api/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2Mjc3MTg0NTl9.1WPmIiWLIkydWHI_qGAAtBR2nfHnniSMcHDNDPihOIo
+
+{
+  "content" : "Ahihi 123123",
+  "postId" : "611b5663e02a1a3334dbb5fb"
+}
+###
+GET http://localhost:5000/v1/api/comments/611b5663e02a1a3334dbb5fb
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2Mjc3MTg0NTl9.1WPmIiWLIkydWHI_qGAAtBR2nfHnniSMcHDNDPihOIo
+###
+DELETE http://localhost:5000/v1/api/comments/612b1963ef407b42e46eee17
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA1MDI0ODg2YTU3NTE4YjAyZmIxODgiLCJpYXQiOjE2MzAyMTU2ODV9.4f5tq4i8PwVC8S0GcfgjlpCCL0YZ6F_nbgNONo2Kt0g
+
+###

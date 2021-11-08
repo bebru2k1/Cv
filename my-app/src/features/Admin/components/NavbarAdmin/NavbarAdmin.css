@@ -1,0 +1,122 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #282c35;
+  text-align: initial;
+  width: 240px;
+  height: 100%;
+  padding: 6px 14px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  border-right: rgb(104, 103, 103) 2px solid;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar__logo__icon {
+}
+
+.sidebar__logo__menu {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.logo img {
+  width: 40px;
+}
+
+.logo__name {
+  font-size: 20px;
+  /* font-weight: bold; */
+  margin-left: 15px;
+}
+
+.sidebar__nav {
+  padding: 0;
+}
+.sidebar__nav__me {
+}
+.sidebar__nav__me__title {
+  margin-left: 20px;
+}
+.sidebar__nav-item-image {
+  width: 40px;
+  border-radius: 50%;
+}
+.sidebar__nav li {
+  list-style: none;
+  position: relative;
+}
+
+.sidebar__nav-item a,
+.sidebar__nav-item {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 10px 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.sidebar__nav-item a {
+}
+
+.sidebar__nav-item a:hover {
+  color: var(--green-color);
+  box-shadow: 0 1px 0 4px rgb(20 184 166 / 10%),
+    inset 0 -4em 0 rgb(20 184 166 / 10%);
+}
+.activeLink {
+  color: var(--green-color);
+  box-shadow: 0 1px 0 4px rgb(20 184 166 / 10%),
+    inset 0 -5em 0 rgb(20 184 166 / 10%);
+}
+
+.sidebar__nav__name {
+}
+.sidebar__nav-item-icon {
+  height: 18px;
+  text-align: left;
+  min-width: 50px;
+}
+.sidebar__nav-item input {
+  padding: 15px;
+  background-color: #1d1b31;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  padding-left: 40px;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+}
+::placeholder {
+  color: rgb(235, 235, 235, 0.7);
+}
+
+.sidebar__logo__icon-search {
+  position: absolute;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}

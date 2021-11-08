@@ -1,0 +1,20 @@
+.footer {
+  padding: 60px 0 30px 0;
+  text-align: center;
+}
+.footer__copyright {
+  font-size: 13px;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contact__title {
+}
+.footer__contact__facebook-icon {
+  width: 30px;
+  margin-left: 10px;
+}

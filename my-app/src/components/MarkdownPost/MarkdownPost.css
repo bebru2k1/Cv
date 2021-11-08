@@ -1,0 +1,23 @@
+.markdown {
+  display: flex;
+}
+.markdown__textarea {
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.markdown__convert {
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  /* background: black; */
+  color: white;
+  position: absolute;
+  right: 0;
+  overflow-x: visible;
+  font-family: none;
+}

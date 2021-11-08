@@ -1,0 +1,63 @@
+.createpost input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.createpost {
+  margin: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 1000px;
+}
+
+.createpost__item {
+  font-size: 18px;
+  width: 90%;
+}
+.createpost__title {
+}
+
+.createpost__des {
+}
+
+.createpost__image {
+}
+
+.createpost__input__name {
+  display: flex;
+  padding: 20px 0;
+}
+.createpost__item__icon {
+  margin-right: 10px;
+}
+.createpost__input {
+}
+
+.createpost__input__name {
+}
+
+.createpost__des__flex {
+}
+
+textarea {
+  height: 500px;
+}
+
+.createpost__input__name {
+}
+
+.createpost__input {
+}
+.createpost__submit {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
