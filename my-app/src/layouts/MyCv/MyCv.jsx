@@ -191,7 +191,7 @@ function MyCv() {
           </h2>
           <div className="mycv__right__project__content flex-alight">
             <Icon.Link className="mycv__right__project__content-icon" />
-            <Link to="/" className="mycv__right__project__content-link">
+            <a href="https://auro-blog.vercel.app/" className="mycv__right__project__content-link">
               Aurora Blog
               <div
                 style={{
@@ -207,7 +207,7 @@ function MyCv() {
               >
                 React-Redux-Express
               </div>
-            </Link>
+            </a>
           </div>
           <div className="mycv__right__project__content flex-alight">
             <Icon.Link className="mycv__right__project__content-icon" />
